@@ -1,26 +1,22 @@
-var vocales = ["a", "e", "i", "o", "u"];
-
-var counter = 0;
-
 var cadena = "Hola me llamo";
 
 const countVowels = (str) => {
+    var counter = 0;
+    var vocales = ["a", "e", "i", "o", "u"];
 
-    for (let i = 0; i < cadena.length; i++) {
-
-        var letra = cadena[i];
+    for (let i = 0; i < str.length; i++) {
+        var letra = str[i];
 
         for (let j = 0; j < vocales.length; j++) {
-
             var vocal = vocales[j];
 
             if (vocal === letra) {
-
                 counter++;
 
-            } 
+            }
         }
     }
+    return counter;
 };
 
 countVowels(cadena);

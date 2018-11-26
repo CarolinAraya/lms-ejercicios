@@ -3,7 +3,7 @@ var number = 9;
 
 var array = [3, 15, 4, 6, 2, 9, 12, 34];
 
-function findPairForSum(array, number) {
+function findPairForSum(numbers, number) {
 
     var result = [];
 
@@ -25,3 +25,5 @@ function findPairForSum(array, number) {
     }
     return result;
 }
+
+findPairForSum(array, number)
