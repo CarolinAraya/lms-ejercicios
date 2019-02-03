@@ -1,16 +1,11 @@
-var word = "world";
 
-
-function myFunction(n) {
-
-    var str = "Hello world, welcome to the universe.";
-
-    console.log(str.includes(n))
-    return str.includes(n);
-
+const substring = (srt, subsrt) => {
+    return srt.includes(subsrt) 
 }
 
-myFunction(word);
+console.log(substring("holi que tal!", "que tal"))
+
+
 
 /* Escribe una función que tome un `string` y un `substring`y devuelva
 verdadero si el `string` contiene el `substring`. */

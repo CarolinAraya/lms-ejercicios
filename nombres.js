@@ -1,4 +1,4 @@
-let arrayNames = ["grace", "ada", "margaret", "eniac", "joan"];
+let arrayNames = ["grace", "ada", "margaret", "eniac", "joan"]; //devuelve el nombre más largo y en mayúscula la primera letra
 
 const longer = (arr) => {
     let name = arr[0];
@@ -11,10 +11,9 @@ const longer = (arr) => {
     }
     return name.charAt(0).toUpperCase() + name.slice(1);
 }
-
 //console.log(longer(arrayNames));
 
-const sortString = (arr) => {
+const sortString = (arr) => {//Ordena el arreglo alfabéticamente en forma ascendente (a-z), (mostrar el resultado en un listado)
     if (arr < 1) {
         return []
     }
@@ -34,15 +33,5 @@ const sortString = (arr) => {
     }
     return [].concat(sortString(sortLeft), pivot, sortString(sortRight));
 }
-console.log(sortString(arrayNames))
+console.log(`los nombre al revés son ${sortString(arrayNames)}`)
 
-/* ○ Dado el siguiente arreglo de nombres:
-■ arrayNames = [“grace”, ”ada”, ”margaret”, “eniac”, ”joan”]
-○ Desarrollar el código para cada uno de los siguientes casos:
-■ Obtener el nombre más largo y escribirlo colocando en mayúscula la
-primera letra
-■ Ordenar el arreglo alfabéticamente en forma ascendente (a-z) y
-mostrar el resultado en un listado.
-
-○ Importante: no puedes usar los métodos nativos como `sort()`, `map()`,
-`filter()` o `each()`. */

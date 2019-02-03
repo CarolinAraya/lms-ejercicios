@@ -19,7 +19,7 @@ const countVowels = (str) => {
     return counter;
 };
 
-countVowels(cadena);
+console.log(countVowels(cadena));
 
 /*Crea una función que cuente el número de vocales de un string. 
 Sigue los pasos a continuación para que completes el programa.
